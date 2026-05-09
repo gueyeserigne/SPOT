@@ -1,0 +1,15 @@
+target/
+build/
+.gradle/
+.idea/
+*.iml
+*.class
+*.log
+.DS_Store
+
+# Large MATSim / GIS scenario files
+*.osm
+*.osm.pbf
+*.xml
+*.xml.gz
+scenarios/

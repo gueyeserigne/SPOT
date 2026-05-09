@@ -1,0 +1,356 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< org.matsim:SPOT >---------------------------
+[INFO] Building SPOT 0.0.1
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.7.0:tree (default-cli) @ SPOT ---
+[INFO] org.matsim:SPOT:jar:0.0.1
+[INFO] +- org.matsim:matsim:jar:2025.0:compile
+[INFO] |  +- it.unimi.dsi:fastutil-core:jar:8.5.14:compile
+[INFO] |  +- org.geotools:gt-referencing:jar:31.3:compile
+[INFO] |  |  +- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  |  +- org.geotools:gt-metadata:jar:31.3:compile
+[INFO] |  |  |  +- org.geotools:gt-api:jar:31.3:compile
+[INFO] |  |  |  |  +- systems.uom:systems-common:jar:2.1:compile
+[INFO] |  |  |  |  |  +- si.uom:si-quantity:jar:2.1:compile
+[INFO] |  |  |  |  |  \- si.uom:si-units:jar:2.1:compile
+[INFO] |  |  |  |  |     \- jakarta.annotation:jakarta.annotation-api:jar:1.3.4:compile
+[INFO] |  |  |  |  \- tech.units:indriya:jar:2.1.3:compile
+[INFO] |  |  |  |     +- tech.uom.lib:uom-lib-common:jar:2.1:compile
+[INFO] |  |  |  |     \- javax.inject:javax.inject:jar:1:compile
+[INFO] |  |  |  \- org.geotools.ogc:net.opengis.ows:jar:31.3:compile
+[INFO] |  |  |     \- org.geotools.ogc:org.w3.xlink:jar:31.3:compile
+[INFO] |  |  +- it.geosolutions.jgridshift:jgridshift-core:jar:1.3:compile
+[INFO] |  |  \- net.sf.geographiclib:GeographicLib-Java:jar:1.49:compile
+[INFO] |  +- org.geotools:gt-shapefile:jar:31.3:compile
+[INFO] |  +- org.geotools:gt-geopkg:jar:31.3:compile
+[INFO] |  |  +- org.geotools:gt-jdbc:jar:31.3:compile
+[INFO] |  |  |  \- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  +- org.xerial:sqlite-jdbc:jar:3.41.2.2:compile
+[INFO] |  |  +- commons-io:commons-io:jar:2.16.1:compile
+[INFO] |  |  +- org.geotools.xsd:gt-xsd-core:jar:31.3:compile
+[INFO] |  |  |  +- org.geotools:gt-xml:jar:31.3:compile
+[INFO] |  |  |  |  \- org.apache.xml:xml-commons-resolver:jar:1.2:compile
+[INFO] |  |  |  +- picocontainer:picocontainer:jar:1.2:compile
+[INFO] |  |  |  +- commons-jxpath:commons-jxpath:jar:1.3:compile
+[INFO] |  |  |  +- org.eclipse.emf:org.eclipse.emf.common:jar:2.15.0:compile
+[INFO] |  |  |  +- org.eclipse.emf:org.eclipse.emf.ecore:jar:2.15.0:compile
+[INFO] |  |  |  +- org.eclipse.xsd:org.eclipse.xsd:jar:2.12.0:compile
+[INFO] |  |  |  \- org.eclipse.emf:org.eclipse.emf.ecore.xmi:jar:2.15.0:compile
+[INFO] |  |  \- org.geotools.xsd:gt-xsd-fes:jar:31.3:compile
+[INFO] |  |     +- org.geotools.ogc:net.opengis.fes:jar:31.3:compile
+[INFO] |  |     +- org.geotools.xsd:gt-xsd-gml3:jar:31.3:compile
+[INFO] |  |     |  \- org.geotools.xsd:gt-xsd-gml2:jar:31.3:compile
+[INFO] |  |     \- org.geotools.xsd:gt-xsd-ows:jar:31.3:compile
+[INFO] |  |        \- org.geotools.xsd:gt-xsd-filter:jar:31.3:compile
+[INFO] |  +- org.geotools:gt-epsg-hsql:jar:31.3:runtime
+[INFO] |  +- org.jfree:jfreechart:jar:1.5.5:compile
+[INFO] |  +- com.google.inject:guice:jar:7.0.0:compile
+[INFO] |  |  +- jakarta.inject:jakarta.inject-api:jar:2.0.1:compile
+[INFO] |  |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  +- com.google.inject.extensions:guice-grapher:jar:7.0.0:compile
+[INFO] |  |  \- com.google.inject.extensions:guice-assistedinject:jar:7.0.0:compile
+[INFO] |  +- com.google.guava:guava:jar:33.3.0-jre:compile
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.2:compile
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[INFO] |  |  +- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.45.0:compile
+[INFO] |  |  +- com.google.errorprone:error_prone_annotations:jar:2.33.0:compile
+[INFO] |  |  \- com.google.j2objc:j2objc-annotations:jar:3.0.0:compile
+[INFO] |  +- org.jgrapht:jgrapht-core:jar:1.5.2:compile
+[INFO] |  |  +- org.jheaps:jheaps:jar:0.14:compile
+[INFO] |  |  \- org.apfloat:apfloat:jar:1.10.1:compile
+[INFO] |  +- net.sf.trove4j:trove4j:jar:3.0.3:compile
+[INFO] |  +- org.lz4:lz4-java:jar:1.8.0:compile
+[INFO] |  +- com.github.luben:zstd-jni:jar:1.5.6-5:compile
+[INFO] |  +- jakarta.validation:jakarta.validation-api:jar:3.1.0:compile
+[INFO] |  +- org.hibernate.validator:hibernate-validator:jar:8.0.1.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.4.3.Final:compile
+[INFO] |  |  \- com.fasterxml:classmate:jar:1.5.1:compile
+[INFO] |  +- org.hibernate.validator:hibernate-validator-annotation-processor:jar:8.0.1.Final:compile
+[INFO] |  +- org.glassfish:jakarta.el:jar:4.0.2:compile
+[INFO] |  |  \- jakarta.el:jakarta.el-api:jar:4.0.0:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.27.1:compile
+[INFO] |  +- org.apache.commons:commons-csv:jar:1.11.0:compile
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.6.1:compile
+[INFO] |  +- org.apache.commons:commons-rng-simple:jar:1.5:compile
+[INFO] |  |  +- org.apache.commons:commons-rng-client-api:jar:1.5:compile
+[INFO] |  |  \- org.apache.commons:commons-rng-core:jar:1.5:compile
+[INFO] |  +- org.apache.commons:commons-statistics-distribution:jar:1.0:compile
+[INFO] |  |  +- org.apache.commons:commons-rng-sampling:jar:1.5:compile
+[INFO] |  |  +- org.apache.commons:commons-numbers-combinatorics:jar:1.1:compile
+[INFO] |  |  |  \- org.apache.commons:commons-numbers-core:jar:1.1:compile
+[INFO] |  |  +- org.apache.commons:commons-numbers-gamma:jar:1.1:compile
+[INFO] |  |  |  \- org.apache.commons:commons-numbers-fraction:jar:1.1:compile
+[INFO] |  |  \- org.apache.commons:commons-numbers-rootfinder:jar:1.1:compile
+[INFO] |  +- info.picocli:picocli:jar:4.7.6:compile
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:compile
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:2.1.3:compile
+[INFO] |  +- com.sun.xml.bind:jaxb-impl:jar:4.0.5:compile
+[INFO] |  |  \- com.sun.xml.bind:jaxb-core:jar:4.0.5:compile
+[INFO] |  |     \- org.eclipse.angus:angus-activation:jar:2.0.2:runtime
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.17.2:compile
+[INFO] |  +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.17.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:2.2:compile
+[INFO] |  \- com.fasterxml.woodstox:woodstox-core:jar:7.0.0:compile
+[INFO] |     \- org.codehaus.woodstox:stax2-api:jar:4.2.2:compile
+[INFO] +- org.junit.jupiter:junit-jupiter-engine:jar:5.10.2:test
+[INFO] |  +- org.junit.platform:junit-platform-engine:jar:1.10.2:test
+[INFO] |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |  |  \- org.junit.platform:junit-platform-commons:jar:1.10.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter-api:jar:5.10.2:test
+[INFO] |  \- org.apiguardian:apiguardian-api:jar:1.1.2:compile
+[INFO] +- org.matsim:matsim:test-jar:tests:2025.0:test
+[INFO] +- org.matsim.contrib:minibus:jar:2025.0:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.17.1:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] +- org.matsim.contrib:otfvis:jar:2025.0:compile
+[INFO] |  +- net.java.dev.timingframework:timingframework:jar:1.0:compile
+[INFO] |  +- org.jogamp.gluegen:gluegen-rt-main:jar:2.5.0:compile
+[INFO] |  |  +- org.jogamp.gluegen:gluegen-rt:jar:2.5.0:compile
+[INFO] |  |  +- org.jogamp.gluegen:gluegen-rt:jar:natives-android-aarch64:2.5.0:compile
+[INFO] |  |  +- org.jogamp.gluegen:gluegen-rt:jar:natives-linux-amd64:2.5.0:compile
+[INFO] |  |  +- org.jogamp.gluegen:gluegen-rt:jar:natives-linux-armv6hf:2.5.0:compile
+[INFO] |  |  +- org.jogamp.gluegen:gluegen-rt:jar:natives-linux-aarch64:2.5.0:compile
+[INFO] |  |  +- org.jogamp.gluegen:gluegen-rt:jar:natives-macosx-universal:2.5.0:compile
+[INFO] |  |  +- org.jogamp.gluegen:gluegen-rt:jar:natives-windows-amd64:2.5.0:compile
+[INFO] |  |  \- antlr:antlr:jar:2.7.7:compile
+[INFO] |  +- org.jogamp.jogl:jogl-all-main:jar:2.5.0:compile
+[INFO] |  |  +- org.jogamp.jogl:jogl-all:jar:2.5.0:compile
+[INFO] |  |  +- org.jogamp.jogl:jogl-all:jar:natives-android-aarch64:2.5.0:compile
+[INFO] |  |  +- org.jogamp.jogl:jogl-all:jar:natives-linux-amd64:2.5.0:compile
+[INFO] |  |  +- org.jogamp.jogl:jogl-all:jar:natives-linux-armv6hf:2.5.0:compile
+[INFO] |  |  +- org.jogamp.jogl:jogl-all:jar:natives-linux-aarch64:2.5.0:compile
+[INFO] |  |  +- org.jogamp.jogl:jogl-all:jar:natives-macosx-universal:2.5.0:compile
+[INFO] |  |  \- org.jogamp.jogl:jogl-all:jar:natives-windows-amd64:2.5.0:compile
+[INFO] |  \- org.jxmapviewer:jxmapviewer2:jar:2.8:compile
+[INFO] +- org.matsim.contrib:noise:jar:2025.0:compile
+[INFO] |  +- org.matsim.contrib:analysis:jar:2025.0:compile
+[INFO] |  |  +- org.osgeo:proj4j:jar:0.1.0:compile
+[INFO] |  |  +- com.google.code.gson:gson:jar:2.11.0:compile
+[INFO] |  |  \- org.apache.httpcomponents.client5:httpclient5:jar:5.3.1:compile
+[INFO] |  |     +- org.apache.httpcomponents.core5:httpcore5:jar:5.2.4:compile
+[INFO] |  |     \- org.apache.httpcomponents.core5:httpcore5-h2:jar:5.2.4:compile
+[INFO] |  +- org.geotools:gt-coverage:jar:31.3:compile
+[INFO] |  |  +- javax.media:jai_imageio:jar:1.1:compile
+[INFO] |  |  +- it.geosolutions.imageio-ext:imageio-ext-tiff:jar:1.4.12:compile
+[INFO] |  |  |  +- it.geosolutions.imageio-ext:imageio-ext-utilities:jar:1.4.12:compile
+[INFO] |  |  |  +- it.geosolutions.imageio-ext:imageio-ext-geocore:jar:1.4.12:compile
+[INFO] |  |  |  |  +- it.geosolutions.imageio-ext:imageio-ext-streams:jar:1.4.12:compile
+[INFO] |  |  |  |  +- javax.xml.bind:jaxb-api:jar:2.4.0-b180830.0359:compile
+[INFO] |  |  |  |  \- javax.activation:javax.activation-api:jar:1.2.0:compile
+[INFO] |  |  |  +- io.airlift:aircompressor:jar:0.27:compile
+[INFO] |  |  |  \- javax.media:jai_codec:jar:1.1.3:compile
+[INFO] |  |  +- org.jaitools:jt-zonalstats:jar:1.6.0:compile
+[INFO] |  |  +- org.jaitools:jt-utils:jar:1.6.0:compile
+[INFO] |  |  +- it.geosolutions.jaiext.affine:jt-affine:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.algebra:jt-algebra:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.bandmerge:jt-bandmerge:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.bandselect:jt-bandselect:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.bandcombine:jt-bandcombine:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.border:jt-border:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.buffer:jt-buffer:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.crop:jt-crop:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.iterators:jt-iterators:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.lookup:jt-lookup:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.mosaic:jt-mosaic:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.nullop:jt-nullop:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.rescale:jt-rescale:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.scale:jt-scale:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.scale2:jt-scale2:jar:1.1.25:compile
+[INFO] |  |  |  \- org.huldra.math:bigint:jar:0.7.1:compile
+[INFO] |  |  +- it.geosolutions.jaiext.stats:jt-stats:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.translate:jt-translate:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.utilities:jt-utilities:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.warp:jt-warp:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.zonal:jt-zonal:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.binarize:jt-binarize:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.format:jt-format:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.colorconvert:jt-colorconvert:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.errordiffusion:jt-errordiffusion:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.orderdither:jt-orderdither:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.colorindexer:jt-colorindexer:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.imagefunction:jt-imagefunction:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.piecewise:jt-piecewise:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.classifier:jt-classifier:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.rlookup:jt-rlookup:jar:1.1.25:compile
+[INFO] |  |  +- it.geosolutions.jaiext.vectorbin:jt-vectorbin:jar:1.1.25:compile
+[INFO] |  |  \- it.geosolutions.jaiext.shadedrelief:jt-shadedrelief:jar:1.1.25:compile
+[INFO] |  +- org.geotools:gt-geotiff:jar:31.3:compile
+[INFO] |  |  \- it.geosolutions.imageio-ext:imageio-ext-cog-reader:jar:1.4.12:compile
+[INFO] |  |     +- it.geosolutions.imageio-ext:imageio-ext-cog-commons:jar:1.4.12:compile
+[INFO] |  |     \- it.geosolutions.imageio-ext:imageio-ext-cog-streams:jar:1.4.12:compile
+[INFO] |  |        \- org.ehcache:ehcache:jar:3.4.0:compile
+[INFO] |  +- org.openstreetmap.osmosis:osmosis-core:jar:0.49.2:compile
+[INFO] |  |  \- net.sf.jpf:jpf:jar:1.5:runtime
+[INFO] |  \- org.openstreetmap.osmosis:osmosis-xml:jar:0.49.2:compile
+[INFO] +- org.matsim.contrib:roadpricing:jar:2025.0:compile
+[INFO] +- org.matsim.contrib:taxi:jar:2025.0:compile
+[INFO] |  +- org.matsim.contrib:dvrp:jar:2025.0:compile
+[INFO] |  |  \- one.util:streamex:jar:0.8.2:compile
+[INFO] |  +- org.matsim.contrib:drt:jar:2025.0:compile
+[INFO] |  |  \- com.opencsv:opencsv:jar:5.9:compile
+[INFO] |  |     \- commons-beanutils:commons-beanutils:jar:1.9.4:compile
+[INFO] |  |        \- commons-collections:commons-collections:jar:3.2.2:compile
+[INFO] |  \- org.matsim.contrib:ev:jar:2025.0:compile
+[INFO] +- org.matsim.contrib:av:jar:2025.0:compile
+[INFO] +- org.matsim.contrib:freight:jar:2025.0:compile
+[INFO] |  +- com.graphhopper:jsprit-core:jar:1.8:compile
+[INFO] |  |  \- org.slf4j:slf4j-api:jar:2.0.16:compile
+[INFO] |  +- com.graphhopper:jsprit-io:jar:1.8:compile
+[INFO] |  |  \- commons-configuration:commons-configuration:jar:1.9:compile
+[INFO] |  |     \- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  +- com.graphhopper:jsprit-analysis:jar:1.8:compile
+[INFO] |  |  +- org.graphstream:gs-core:jar:1.3:compile
+[INFO] |  |  |  +- org.graphstream:pherd:jar:1.0:compile
+[INFO] |  |  |  \- org.graphstream:mbox2:jar:1.0:compile
+[INFO] |  |  \- org.graphstream:gs-ui:jar:1.3:compile
+[INFO] |  |     +- org.graphstream:gs-algo:jar:1.3:compile
+[INFO] |  |     |  \- org.apache.commons:commons-math:jar:2.1:compile
+[INFO] |  |     \- org.scala-lang:scala-library:jar:2.10.1:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j2-impl:jar:2.24.2:compile
+[INFO] |  +- org.matsim:matsim-examples:jar:2025.0:compile
+[INFO] |  +- org.hsqldb:hsqldb:jar:2.7.3:compile
+[INFO] |  \- xerces:xercesImpl:jar:2.12.2:compile
+[INFO] |     \- xml-apis:xml-apis:jar:1.4.01:compile
+[INFO] +- org.matsim.contrib:bicycle:jar:2025.0:compile
+[INFO] |  \- org.matsim.contrib:osm:jar:2025.0:compile
+[INFO] |     \- de.topobyte:osm4j-pbf:jar:1.3.0:compile
+[INFO] |        +- de.topobyte:osm4j-core:jar:1.3.0:compile
+[INFO] |        |  +- de.topobyte:adt-multicollections:jar:0.0.4:compile
+[INFO] |        |  +- com.slimjars.trove4j:trove4j-long-hash-set:jar:1.0.1:compile
+[INFO] |        |  |  +- com.slimjars.trove4j:trove4j-hash-primitive-iterator:jar:1.0.1:compile
+[INFO] |        |  |  |  +- com.slimjars.trove4j:trove4j-primitive-hash:jar:1.0.1:compile
+[INFO] |        |  |  |  |  \- com.slimjars.trove4j:trove4j-hash:jar:1.0.1:compile
+[INFO] |        |  |  |  |     \- com.slimjars.trove4j:trove4j-prime-finder:jar:1.0.1:compile
+[INFO] |        |  |  |  \- com.slimjars.trove4j:trove4j-primitive-iterator:jar:1.0.1:compile
+[INFO] |        |  |  +- com.slimjars.trove4j:trove4j-long-hash:jar:1.0.1:compile
+[INFO] |        |  |  |  \- com.slimjars.trove4j:trove4j-long-procedure:jar:1.0.1:compile
+[INFO] |        |  |  \- com.slimjars.trove4j:trove4j-long-set:jar:1.0.1:compile
+[INFO] |        |  |     \- com.slimjars.trove4j:trove4j-long-collection:jar:1.0.1:compile
+[INFO] |        |  |        \- com.slimjars.trove4j:trove4j-long-iterator:jar:1.0.1:compile
+[INFO] |        |  +- com.slimjars.trove4j:trove4j-long-array-list:jar:1.0.1:compile
+[INFO] |        |  |  +- com.slimjars.trove4j:trove4j-constants:jar:1.0.1:compile
+[INFO] |        |  |  \- com.slimjars.trove4j:trove4j-long-list:jar:1.0.1:compile
+[INFO] |        |  |     \- com.slimjars.trove4j:trove4j-long-function:jar:1.0.1:compile
+[INFO] |        |  \- com.slimjars.trove4j:trove4j-long-object-hash-map:jar:1.0.1:compile
+[INFO] |        |     \- com.slimjars.trove4j:trove4j-long-object-map:jar:1.0.1:compile
+[INFO] |        |        +- com.slimjars.trove4j:trove4j-long-object-iterator:jar:1.0.1:compile
+[INFO] |        |        +- com.slimjars.trove4j:trove4j-long-object-procedure:jar:1.0.1:compile
+[INFO] |        |        \- com.slimjars.trove4j:trove4j-object-function:jar:1.0.1:compile
+[INFO] |        +- com.slimjars.trove4j:trove4j-object-int-hash-map:jar:1.0.1:compile
+[INFO] |        |  +- com.slimjars.trove4j:trove4j-hash-functions:jar:1.0.1:compile
+[INFO] |        |  +- com.slimjars.trove4j:trove4j-object-hash-iterator:jar:1.0.1:compile
+[INFO] |        |  |  \- com.slimjars.trove4j:trove4j-hash-iterator:jar:1.0.1:compile
+[INFO] |        |  |     +- com.slimjars.trove4j:trove4j-iterator:jar:1.0.1:compile
+[INFO] |        |  |     \- com.slimjars.trove4j:trove4j-object-hash:jar:1.0.1:compile
+[INFO] |        |  \- com.slimjars.trove4j:trove4j-object-int-map:jar:1.0.1:compile
+[INFO] |        |     +- com.slimjars.trove4j:trove4j-int-collection:jar:1.0.1:compile
+[INFO] |        |     |  +- com.slimjars.trove4j:trove4j-int-iterator:jar:1.0.1:compile
+[INFO] |        |     |  \- com.slimjars.trove4j:trove4j-int-procedure:jar:1.0.1:compile
+[INFO] |        |     +- com.slimjars.trove4j:trove4j-int-function:jar:1.0.1:compile
+[INFO] |        |     +- com.slimjars.trove4j:trove4j-object-int-iterator:jar:1.0.1:compile
+[INFO] |        |     |  \- com.slimjars.trove4j:trove4j-advancing-iterator:jar:1.0.1:compile
+[INFO] |        |     +- com.slimjars.trove4j:trove4j-object-int-procedure:jar:1.0.1:compile
+[INFO] |        |     \- com.slimjars.trove4j:trove4j-object-procedure:jar:1.0.1:compile
+[INFO] |        +- com.google.protobuf:protobuf-javalite:jar:3.23.4:compile
+[INFO] |        \- net.jpountz.lz4:lz4:jar:1.3.0:compile
+[INFO] +- org.matsim.contrib:emissions:jar:2025.0:compile
+[INFO] +- org.matsim.contrib:application:jar:2025.0:compile
+[INFO] |  +- tech.tablesaw:tablesaw-core:jar:0.43.1:compile
+[INFO] |  |  +- org.roaringbitmap:RoaringBitmap:jar:0.9.25:compile
+[INFO] |  |  |  \- org.roaringbitmap:shims:jar:0.9.25:runtime
+[INFO] |  |  +- com.univocity:univocity-parsers:jar:2.8.4:compile
+[INFO] |  |  +- com.ibm.icu:icu4j:jar:65.1:compile
+[INFO] |  |  \- io.github.classgraph:classgraph:jar:4.8.60:compile
+[INFO] |  +- org.apache.avro:avro:jar:1.12.0:compile
+[INFO] |  +- org.matsim.contrib:sumo:jar:2025.0:compile
+[INFO] |  +- com.github.matsim-org:gtfs2matsim:jar:19f1676fc6:compile
+[INFO] |  |  +- com.github.conveyal:gtfs-lib:jar:7.1.0:compile
+[INFO] |  |  |  +- net.sourceforge.javacsv:javacsv:jar:2.0:compile
+[INFO] |  |  |  +- com.beust:jcommander:jar:1.30:compile
+[INFO] |  |  |  +- org.mapdb:mapdb:jar:1.0.8:compile
+[INFO] |  |  |  +- org.slf4j:slf4j-simple:jar:1.7.25:runtime
+[INFO] |  |  |  +- commons-dbutils:commons-dbutils:jar:1.6:compile
+[INFO] |  |  |  +- commons-cli:commons-cli:jar:1.4:compile
+[INFO] |  |  |  \- org.apache.commons:commons-dbcp2:jar:2.1.1:compile
+[INFO] |  |  |     \- org.apache.commons:commons-pool2:jar:2.4.2:compile
+[INFO] |  |  \- com.conveyal:jackson2-geojson:jar:0.8:compile
+[INFO] |  |     \- com.vividsolutions:jts:jar:1.13:compile
+[INFO] |  +- it.unimi.dsi:fastutil:jar:8.5.15:compile
+[INFO] |  +- org.apache.commons:commons-text:jar:1.12.0:compile
+[INFO] |  \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.17.2:compile
+[INFO] +- org.matsim.contrib:simwrapper:jar:2025.0:compile
+[INFO] |  +- tech.tablesaw:tablesaw-jsplot:jar:0.43.1:compile
+[INFO] |  \- io.pebbletemplates:pebble:jar:3.1.6:compile
+[INFO] |     \- org.unbescape:unbescape:jar:1.1.6.RELEASE:compile
+[INFO] +- org.matsim.contrib:vsp:jar:2025.0:compile
+[INFO] |  +- org.matsim.contrib:multimodal:jar:2025.0:compile
+[INFO] |  +- org.matsim.contrib:parking:jar:2025.0:compile
+[INFO] |  +- org.matsim.contrib:accessibility:jar:2025.0:compile
+[INFO] |  |  +- org.matsim.contrib:matrixbasedptrouter:jar:2025.0:compile
+[INFO] |  |  \- org.geotools.jdbc:gt-jdbc-postgis:jar:31.3:compile
+[INFO] |  |     \- org.postgresql:postgresql:jar:42.7.3:compile
+[INFO] |  +- org.matsim.contrib:common:jar:2025.0:compile
+[INFO] |  |  \- com.uber:h3:jar:4.1.1:compile
+[INFO] |  +- org.matsim.contrib:informed-mode-choice:jar:2025.0:compile
+[INFO] |  +- org.matsim.contrib:signals:jar:2025.0:compile
+[INFO] |  |  \- de.topobyte:osm4j-xml:jar:1.3.0:compile
+[INFO] |  |     +- de.topobyte:dynsax:jar:0.0.1:compile
+[INFO] |  |     \- joda-time:joda-time:jar:2.12.5:compile
+[INFO] |  +- org.openstreetmap.osmosis:osmosis-tagfilter:jar:0.49.2:compile
+[INFO] |  +- org.openstreetmap.osmosis:osmosis-set:jar:0.49.2:compile
+[INFO] |  +- org.openstreetmap.osmosis:osmosis-areafilter:jar:0.49.2:compile
+[INFO] |  +- org.matsim.contrib:cadyts-integration:jar:2025.0:compile
+[INFO] |  |  \- cadyts:cadyts:jar:1.1.0:compile
+[INFO] |  +- org.apache.poi:poi-ooxml:jar:5.3.0:compile
+[INFO] |  |  +- org.apache.poi:poi:jar:5.3.0:compile
+[INFO] |  |  |  \- com.zaxxer:SparseBitSet:jar:1.3:compile
+[INFO] |  |  +- org.apache.poi:poi-ooxml-lite:jar:5.3.0:compile
+[INFO] |  |  +- org.apache.xmlbeans:xmlbeans:jar:5.2.1:compile
+[INFO] |  |  +- com.github.virtuald:curvesapi:jar:1.08:compile
+[INFO] |  |  \- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.jcraft:jsch:jar:0.1.55:compile
+[INFO] |  +- org.openjfx:javafx-graphics:jar:22.0.2:compile
+[INFO] |  |  +- org.openjfx:javafx-graphics:jar:linux:22.0.2:compile
+[INFO] |  |  \- org.openjfx:javafx-base:jar:22.0.2:compile
+[INFO] |  |     \- org.openjfx:javafx-base:jar:linux:22.0.2:compile
+[INFO] |  \- com.graphhopper:graphhopper-core:jar:9.1:compile
+[INFO] |     +- com.graphhopper:graphhopper-web-api:jar:9.1:compile
+[INFO] |     +- com.carrotsearch:hppc:jar:0.8.1:compile
+[INFO] |     +- org.codehaus.janino:janino:jar:3.1.9:compile
+[INFO] |     |  \- org.codehaus.janino:commons-compiler:jar:3.1.9:compile
+[INFO] |     +- com.graphhopper.external:jackson-datatype-jts:jar:2.14:compile
+[INFO] |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.17.2:compile
+[INFO] |     +- org.apache.xmlgraphics:xmlgraphics-commons:jar:2.7:compile
+[INFO] |     +- de.westnordost:osm-legal-default-speeds-jvm:jar:1.4:compile
+[INFO] |     +- org.jetbrains.kotlin:kotlin-stdlib:jar:1.6.20:compile
+[INFO] |     |  +- org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.6.20:compile
+[INFO] |     |  \- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |     \- org.openstreetmap.osmosis:osmosis-osm-binary:jar:0.48.3:compile
+[INFO] |        \- com.google.protobuf:protobuf-java:jar:3.12.2:compile
+[INFO] +- org.geotools:gt-main:jar:31.3:compile
+[INFO] |  +- org.geotools:gt-http:jar:31.3:compile
+[INFO] |  +- com.google.re2j:re2j:jar:1.7:compile
+[INFO] |  +- org.ejml:ejml-ddense:jar:0.41:compile
+[INFO] |  |  \- org.ejml:ejml-core:jar:0.41:compile
+[INFO] |  \- javax.media:jai_core:jar:1.1.3:compile
+[INFO] +- org.geotools:gt-geojson:jar:31.3:compile
+[INFO] |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:compile
+[INFO] |  \- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] +- org.locationtech.jts:jts-core:jar:1.20.0:compile
+[INFO] +- org.opengis:geoapi:jar:3.0.1:compile
+[INFO] |  \- javax.measure:unit-api:jar:2.1.3:compile
+[INFO] +- org.locationtech.proj4j:proj4j:jar:1.3.0:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.17.2:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-annotations:jar:2.17.2:compile
+[INFO] +- org.apache.logging.log4j:log4j-api:jar:2.24.2:compile
+[INFO] \- org.apache.logging.log4j:log4j-core:jar:2.24.2:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.199 s
+[INFO] Finished at: 2026-04-29T18:55:22+02:00
+[INFO] ------------------------------------------------------------------------
