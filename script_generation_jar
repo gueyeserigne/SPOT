@@ -1,0 +1,2 @@
+# Instruction permettant de générrer les fichiers exécutables jar.
+mvn clean package -Dmaven.test.skip=true

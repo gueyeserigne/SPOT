@@ -15,8 +15,8 @@ public class Simulation {
 
         String configFile = dir + "config.xml";
         String networkFile = dir + "network.xml.gz";
-        String plansFile = dir + "plans.xml";
-        String facilitiesFile = dir + "facilities.xml";
+        String plansFile = dir + "plans_samedi.xml";
+        String facilitiesFile = dir + "facilities_samedi.xml";
 
         run(configFile, networkFile, plansFile, facilitiesFile);
     }

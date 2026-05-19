@@ -21,6 +21,7 @@ import org.matsim.core.utils.geometry.transformations.TransformationFactory;
 public class DeplacementsCsvToMatsim {
 
  private final Quartiers quartiers;
+ private static String individuscsv;
 
  private final Map<String, String> modes = new HashMap<>();
  private final Map<String, FacilityRef> homeFacilityByPerson = new HashMap<>();
@@ -41,8 +42,9 @@ public class DeplacementsCsvToMatsim {
  }
 
 
- public DeplacementsCsvToMatsim(Quartiers quartiers) {
+ public DeplacementsCsvToMatsim(Quartiers quartiers,String individuscsv) {
      this.quartiers = quartiers;
+     this.individuscsv = individuscsv;
  }
 
  public void run(Path deplacementsCsv,Path modesCetudCsv,Path plansOut,Path facilitiesOut,Set<String> joursimu) throws Exception {
@@ -297,7 +299,7 @@ public class DeplacementsCsvToMatsim {
  private static Map<String, List<Row>> readDeplacements(Path file, Set<String> joursimu) throws Exception {
      Map<String, List<Row>> byPerson = new LinkedHashMap<>();
      Set<String> individus = new HashSet<String>(); // Ensemble des individus concernés par les jours de simulation dans joursimu
-     String individuscsv = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT/Données/Individus_1.csv";
+     //String individuscsv = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT/Données/Individus_1.csv";
           
      PlanCetud plancetud = new PlanCetud(individuscsv);
 
@@ -450,16 +452,27 @@ public class DeplacementsCsvToMatsim {
       */
      //Quartiers quartiers = null;
 	 
-	 String dir = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT/scenarios/cetud/";
-
-	 Set<String> joursimu = new HashSet<String>() {{
+	 //String dir = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT/scenarios/cetud/";
+	 String dir = args[0];
+	 Set<String> joursimu;
+	 
+	 if(args[1].equals("joursouvres")) {
+		 joursimu = new HashSet<String>() {{
 		    add("Mardi");
 		    add("Mercredi");
 		    add("Jeudi");
 		    add("Vendredi");
 		    add("Samedi");
 		}};
-	
+	 }
+	 else {
+		 joursimu = new HashSet<String>() {{
+			    add("Dimanche");
+			}};
+	 }
+	 
+	 String individuscsv = args[2];
+	 
      Quartiers quartiers = new Quartiers(
              dir+"quartiers_centroids.csv",
              dir+"dakar-guediawaye-pikine-thies.geojson"
@@ -467,11 +480,11 @@ public class DeplacementsCsvToMatsim {
 
      quartiers.lireCsvCetud(dir+"codes_quartiers_strates_cetud.csv");
      
-     new DeplacementsCsvToMatsim(quartiers).run(
+     new DeplacementsCsvToMatsim(quartiers,individuscsv).run(
              Paths.get(dir+"Deplacements.csv"),
              Paths.get(dir+"modes_cetud.csv"),
-             Paths.get(dir+"plans.xml"),
-             Paths.get(dir+"facilities.xml"),
+             Paths.get(dir+"plans_samedi.xml"),
+             Paths.get(dir+"facilities_samedi.xml"),
              joursimu);
  }
 }

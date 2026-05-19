@@ -391,7 +391,9 @@ public class Statistics {
 		// TODO Auto-generated method stub
 		//String eventsFile = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT-SENEGAL/scenarios/cetud/output_cetud/ITERS/it.1/1.events.xml.gz";
 		//String eventsFile = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT/scenarios/netmob2025/output_18_09_2025/output_events.xml.gz";
-		String eventsFile = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT-SENEGAL/scenarios/cetud/output_cetud/output_events.xml.gz";
+		String dirFile = args[0];
+		//String eventsFile = "/home/serigne-gueye/RECHERCHE/MATSIM/SPOT-SENEGAL/scenarios/cetud/output/output_events.xml.gz";
+		String eventsFile = dirFile+"/output_events.xml.gz";
 		
         Config config = ConfigUtils.createConfig();
         Scenario scenario = ScenarioUtils.createScenario(config);
