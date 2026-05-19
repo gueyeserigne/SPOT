@@ -14,3 +14,4 @@ build/
 *.xml.gz
 scenarios/
 *.jar
+token.txt
