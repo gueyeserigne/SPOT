@@ -13,3 +13,4 @@ build/
 *.xml
 *.xml.gz
 scenarios/
+*.jar
