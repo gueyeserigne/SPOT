@@ -4,67 +4,44 @@
 # Script : update_spot_repository.sh
 # Objectif :
 # Mettre à jour le dépôt Git SPOT après ajout
-# de nouveaux modules (SPOT-Editor, SPOT-Optimization)
+# de nouveaux modules, sans versionner les fichiers .jar
+# volumineux refusés par GitHub.
 # ==========================================================
 
-# Se déplacer à la racine du projet SPOT
-# Permet d'exécuter toutes les commandes Git
-# dans le bon dépôt.
-cd ~/RECHERCHE/MATSIM/SPOT || exit
+set -e
 
-# Afficher l'état actuel du dépôt
-# Montre :
-# - fichiers modifiés
-# - nouveaux fichiers
-# - fichiers supprimés
-# - fichiers non suivis
-echo "=== Etat actuel du dépôt ==="
+# Se déplacer à la racine du projet SPOT
+cd ~/RECHERCHE/MATSIM/SPOT || exit 1
+
+echo "=== Vérification du dépôt ==="
 git status
 
-# Ajouter tous les nouveaux fichiers et modifications
-#
-# Equivalent à :
-# git add SPOT-Editor SPOT-Optimization
-#
-# Le point "." signifie :
-# ajouter tout ce qui a changé dans le projet
-echo "=== Ajout des nouveaux fichiers ==="
-git add .
+echo "=== Protection contre les fichiers .jar volumineux ==="
 
-# Créer un commit local
-#
-# Le commit représente un instantané des modifications.
-#
-# Modifier le message selon les changements réalisés.
-echo "=== Création du commit ==="
-git commit -m "Add SPOT-Editor and SPOT-Optimization modules"
+# Ajouter les fichiers .jar au .gitignore s'ils n'y sont pas déjà
+grep -qxF "*.jar" .gitignore || echo "*.jar" >> .gitignore
 
-# Synchroniser d'abord avec le dépôt distant
-#
-# --rebase évite les historiques parallèles
-# et place les commits locaux après les commits distants
-#
-# Cela résout le problème :
-# "fetch first"
+# Retirer les .jar du suivi Git sans les supprimer du disque
+git rm --cached -r --ignore-unmatch *.jar
+
+echo "=== Ajout des modules SPOT ==="
+git add SPOT-Editor/ SPOT-Optimization/ .gitignore
+
+echo "=== Vérification des fichiers ajoutés ==="
+git status
+
+echo "=== Création du commit si nécessaire ==="
+if git diff --cached --quiet; then
+    echo "Aucune modification à committer."
+else
+    git commit -m "Add SPOT-Editor and SPOT-Optimization modules"
+fi
+
 echo "=== Synchronisation avec GitHub ==="
 git pull origin main --rebase
 
-# Vérifier si l'étape précédente a réussi
-if [ $? -ne 0 ]; then
-    echo ""
-    echo "Conflit détecté pendant le rebase."
-    echo "Résoudre les conflits puis exécuter :"
-    echo "git rebase --continue"
-    exit 1
-fi
-
-# Envoyer les modifications vers GitHub
-#
-# Le dépôt distant est généralement appelé origin
-# main est la branche principale
 echo "=== Envoi vers GitHub ==="
 git push origin main
 
-# Afficher un message de confirmation
 echo ""
 echo "Mise à jour du dépôt SPOT terminée avec succès."
